@@ -113,6 +113,10 @@ minimax-token-hud/
 └── package.json
 ```
 
+## Acknowledgments
+
+This project is inspired by [claude-hud](https://github.com/jarrodwatts/claude-hud) by Jarrod Watts.
+
 ## License
 
 MIT

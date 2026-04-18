@@ -115,6 +115,10 @@ minimax-token-hud/
 └── package.json
 ```
 
+## 致谢
+
+本项目受 [claude-hud](https://github.com/jarrodwatts/claude-hud) 启发，作者为 Jarrod Watts。
+
 ## License
 
 MIT
