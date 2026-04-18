@@ -1,39 +1,37 @@
 # MiniMax Token HUD
 
-MiniMax Token Plan 用量显示插件，用于 Claude Code 状态行。
+A Claude Code statusline plugin to display MiniMax Token Plan usage.
 
-## 功能
+## Features
 
-- 显示 **5小时滚动窗口** 配额用量
-- 显示 **周配额** 用量
-- 显示剩余额度百分比和配额条
-- 60秒本地缓存，避免频繁调用 API
+- **5-hour rolling window** quota display
+- **Weekly quota** display
+- Usage percentage and quota bar visualization
+- 60-second local cache to reduce API calls
 
-## 输出示例
+## Output Example
 
 ```
 [Token Plan: Usage ██░░░░░░░ 25% (1h 30m / 5h) | ██████████ 85% (2d / 7d)]
 ```
 
-## 安装
+## Installation
 
-### 方式一：Claude Code 插件市场（待发布）
+### Manual Installation
 
-### 方式二：手动安装
-
-1. 克隆仓库：
+1. Clone the repository:
 ```bash
 git clone https://github.com/guaiguaidashu/minimax-hud.git
 ```
 
-2. 安装依赖并编译：
+2. Install dependencies and build:
 ```bash
 cd minimax-hud
 npm install
 npm run build
 ```
 
-3. 在 `~/.claude/settings.json` 中配置 statusLine 命令：
+3. Configure the statusLine in `~/.claude/settings.json`:
 
 ```json
 {
@@ -44,9 +42,9 @@ npm run build
 }
 ```
 
-## 与 claude-hud 组合使用
+## Usage with claude-hud
 
-如果已安装 [claude-hud](https://github.com/jarrodwatts/claude-hud)，可以同时显示两个插件：
+If you have [claude-hud](https://github.com/jarrodwatts/claude-hud) installed, you can display both plugins together:
 
 ```json
 {
@@ -57,19 +55,19 @@ npm run build
 }
 ```
 
-效果：
+Result:
 ```
 [claude-hud output]
 [Token Plan: Usage ██░░░░░░░ 25% (1h 30m / 5h) | ██████████ 85% (2d / 7d)]
 ```
 
-## 认证
+## Authentication
 
-使用 `ANTHROPIC_AUTH_TOKEN` 环境变量进行认证（与 Claude Code 共享）。
+Uses the `ANTHROPIC_AUTH_TOKEN` environment variable (shared with Claude Code).
 
-## 配置
+## Configuration
 
-插件配置目录：`~/.claude/plugins/minimax-token-hud/config.json`
+Plugin config directory: `~/.claude/plugins/minimax-token-hud/config.json`
 
 ```json
 {
@@ -79,39 +77,39 @@ npm run build
 }
 ```
 
-| 选项 | 类型 | 默认值 | 说明 |
-|------|------|--------|------|
-| `showBar` | boolean | true | 显示配额条 |
-| `showFiveHour` | boolean | true | 显示5小时配额 |
-| `showWeekly` | boolean | true | 显示周配额 |
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `showBar` | boolean | true | Show quota bar |
+| `showFiveHour` | boolean | true | Show 5-hour quota |
+| `showWeekly` | boolean | true | Show weekly quota |
 
-## 本地开发测试
+## Local Development
 
 ```bash
 npm run test
 ```
 
-## 技术栈
+## Tech Stack
 
 - TypeScript
 - Node.js >= 18.0.0
 - ES Modules
 
-## 项目结构
+## Project Structure
 
 ```
 minimax-token-hud/
 ├── src/
-│   ├── index.ts       # 主入口
-│   ├── api.ts         # MiniMax API 调用
-│   ├── cache.ts       # 本地缓存（60秒TTL）
-│   ├── config.ts      # 配置管理
-│   ├── render.ts      # 渲染逻辑
-│   ├── colors.ts      # ANSI 颜色工具
-│   └── types.ts       # 类型定义
-├── dist/              # 编译输出
-├── .claude-plugin/    # 插件元数据
-├── commands/          # 用户命令文档
+│   ├── index.ts       # Main entry point
+│   ├── api.ts         # MiniMax API calls
+│   ├── cache.ts       # Local cache (60s TTL)
+│   ├── config.ts      # Configuration management
+│   ├── render.ts      # Rendering logic
+│   ├── colors.ts      # ANSI color utilities
+│   └── types.ts       # Type definitions
+├── dist/              # Build output
+├── .claude-plugin/    # Plugin metadata
+├── commands/          # User commands
 └── package.json
 ```
 
