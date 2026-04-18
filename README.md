@@ -11,6 +11,8 @@ A Claude Code statusline plugin to display MiniMax Token Plan usage.
 
 ## Output Example
 
+![MiniMax Token HUD](https://minimax-algeng-chat-tts.oss-cn-wulanchabu.aliyuncs.com/ccv2%2F2026-04-18%2FMiniMax-M2.7%2F2027217101604786507%2F65e51ca53d2826e088c7e93ff0bccb8a4425645ede8443cc4276860735f789a7..png?Expires=1776606149&OSSAccessKeyId=LTAI5tGLnRTkBjLuYPjNcKQ8&Signature=NCCGv%2Fq1MKfHk%2FKqgFGMf9CnXc0%3D)
+
 ```
 [Token Plan: Usage ██░░░░░░░ 25% (1h 30m / 5h) | ██████████ 85% (2d / 7d)]
 ```
