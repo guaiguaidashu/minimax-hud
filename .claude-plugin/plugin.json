@@ -8,8 +8,8 @@
   "commands": [
     "./commands/setup.md"
   ],
-  "homepage": "https://github.com/anthropics/claude-plugins-public",
-  "repository": "https://github.com/anthropics/claude-plugins-public",
+  "homepage": "https://github.com/guaiguaidashu/minimax-hud",
+  "repository": "https://github.com/guaiguaidashu/minimax-hud",
   "license": "MIT",
   "keywords": ["minimax", "token-plan", "statusline", "quota", "usage"]
 }
