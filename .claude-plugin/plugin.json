@@ -1,0 +1,15 @@
+{
+  "name": "minimax-token-hud",
+  "description": "MiniMax Token Plan usage display for Claude Code - shows 5-hour and weekly quota in status line",
+  "version": "0.0.1",
+  "author": {
+    "name": "User"
+  },
+  "commands": [
+    "./commands/setup.md"
+  ],
+  "homepage": "https://github.com/anthropics/claude-plugins-public",
+  "repository": "https://github.com/anthropics/claude-plugins-public",
+  "license": "MIT",
+  "keywords": ["minimax", "token-plan", "statusline", "quota", "usage"]
+}

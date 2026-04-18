@@ -1,0 +1,19 @@
+{
+  "name": "minimax-token-hud",
+  "owner": {
+    "name": "User"
+  },
+  "metadata": {
+    "description": "Display MiniMax Token Plan usage (5-hour and weekly quota) in Claude Code status line",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "minimax-token-hud",
+      "source": "./",
+      "description": "Display MiniMax Token Plan usage in Claude Code status line. Shows 5-hour rolling window quota and weekly quota with visual bars.",
+      "category": "monitoring",
+      "tags": ["minimax", "token-plan", "quota", "statusline", "usage"]
+    }
+  ]
+}

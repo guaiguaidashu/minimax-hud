@@ -1,0 +1,32 @@
+{
+  "name": "minimax-token-hud",
+  "version": "0.0.1",
+  "description": "MiniMax Token Plan usage display for Claude Code",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist/",
+    "src/",
+    ".claude-plugin/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "npm run build && echo '{}' | node dist/index.js"
+  },
+  "keywords": [
+    "claude-code",
+    "minimax",
+    "token-plan",
+    "statusline"
+  ],
+  "author": "User",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
